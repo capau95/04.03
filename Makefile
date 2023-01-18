@@ -3,7 +3,7 @@ HEADERS = kbfunc.h
 all: kb kbfunc
 
 kb: kb.o kbfunc.o
-	gcc -o kb.o kbfunc.o
+	gcc -o kb.o -o kbfunc.o
 	
 kb.o: kb.c
 	gcc -c kb.c
